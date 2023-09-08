@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCSS</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <body>
+    <!-- header section -->
+    <header id="header">
+      <!-- top header  -->
+      <section
+        id="top_hearder"
+        class="bg-primary py-3 text-white d-none d-md-block"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 pt-2">
+              <h6><i class="bi bi-phone"></i> + 987 654 3210</h6>
+            </div>
+            <div class="col-md-4 pt-2">
+              <h6><i class="bi bi-envelope"></i> yash@xyz.com</h6>
+            </div>
+            <div class="col-md-4 text-end">
+              <h6>
+                <a href="#" class="btn btn-dark"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a href="#" class="btn btn-dark"
+                  ><i class="bi bi-twitter"></i
+                ></a>
+                <a href="#" class="btn btn-dark"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a href="#" class="btn btn-dark"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+              </h6>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- navigation area -->
+      <nav
+        class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 scroll-top"
+      >
+        <div class="container">
+          <a href="#" class="navbar-brand">Learn Code</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav-menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="nav-menu" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="#" class="text-white me-2 nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#service" class="text-white me-2 nav-link">Service</a>
+              </li>
+              <li class="nav-item">
+                <a href="#analytics" class="text-white me-2 nav-link"
+                  >Analytics</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#team" class="text-white me-2 nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="text-white me-2 nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- hero area -->
+    <section id="hero" class="my-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 align-self-center">
+            <h3>Let's Learn Coding</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+              voluptate soluta velit tenetur natus numquam eaque! Rerum sed
+              autem pariatur.
+            </p>
+            <a
+              href="#"
+              class="btn btn-primary mb-4"
+              data-bs-toggle="modal"
+              data-bs-target="#join"
+              >Join Now</a
+            >
+
+            <!-- start modal -->
+
+            <div class="modal" id="join" tabindex="-1">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Join now</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Please fill this form</p>
+                    <form action="" class="mt-2">
+                      <div class="mb-2">
+                        <label for="">Name</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                      <div class="mb-2">
+                        <label for="">Email</label>
+                        <input type="email" class="form-control" />
+                      </div>
+                      <div class="mb-2">
+                        <label for="">Mobile</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-primary">Submit</button>
+                    <button
+                      class="btn btn-secondary text-white"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img src="img/coder.svg" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- service area -->
+    <section id="service" class="py-5">
+      <div class="container py-5">
+        <div class="row mb-3">
+          <div class="col-md-8 offset-md-2 text-center">
+            <h2>Our services</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero,
+              a?
+            </p>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-md-4 mb-2">
+            <div class="card">
+              <div class="card-body text-center">
+                <i
+                  class="bi bi-gear d-block m-auto btn-outline-primary pt-2 my-4"
+                ></i>
+                <h4>Easy to use</h4>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Earum unde, consectetur sapiente corrupti iste fugit eligendi
+                  exercitationem iure libero reprehenderit.
+                </p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-2">
+            <div class="card">
+              <div class="card-body text-center">
+                <i
+                  class="bi bi-graph-up d-block m-auto btn-outline-primary pt-2 my-4"
+                ></i>
+                <h4>Awesome Design</h4>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Earum unde, consectetur sapiente corrupti iste fugit eligendi
+                  exercitationem iure libero reprehenderit.
+                </p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-2">
+            <div class="card">
+              <div class="card-body text-center">
+                <i
+                  class="bi bi-people d-block m-auto btn-outline-primary pt-2 my-4"
+                ></i>
+                <h4>Easy to customize</h4>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Earum unde, consectetur sapiente corrupti iste fugit eligendi
+                  exercitationem iure libero reprehenderit.
+                </p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- analysis area -->
+    <section id="analytics" class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 py-5">
+            <img src="img/Investing.svg" class="img-fluid" />
+          </div>
+          <div class="col-md-6 align-self-center">
+            <h3>Analysis for business opportunities</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptate aperiam doloribus sit, doloremque vero modi cupiditate
+              id non similique illum sed esse fuga velit ipsam vitae, magnam
+              enim quae praesentium.
+            </p>
+            <a href="#" class="btn btn-primary">View more information</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- team area -->
+    <section id="team" class="py-5 bg-light">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-8 offset-md-2">
+            <h2>Our Team</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque
+              pariatur nulla quia distinctio autem in voluptate tempora eius
+              voluptatem ullam!
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 mb-2">
+            <div class="card">
+              <div class="card-body text-center">
+                <img src="img/team_01.jpg" alt="" class="img-fluid mb-3" />
+                <h4>John Doe</h4>
+                <p class="">Lorem ipsum dolor sit amet.</p>
+                <a href="#" class="btn btn-primary"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a href="#" class="btn btn-primary"
+                  ><i class="bi bi-twitter"></i
+                ></a>
+                <a href="#" class="btn btn-primary"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-2">
+            <div class="card">
+              <div class="card-body text-center">
+                <img src="img/team_02.jpg" alt="" class="img-fluid mb-3" />
+                <h4>Danial Clerk</h4>
+                <p class="">Lorem ipsum dolor sit amet.</p>
+                <a href="#" class="btn btn-primary"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a href="#" class="btn btn-primary"
+                  ><i class="bi bi-twitter"></i
+                ></a>
+                <a href="#" class="btn btn-primary"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-2">
+            <div class="card">
+              <div class="card-body text-center">
+                <img src="img/team_03.jpg" alt="" class="img-fluid mb-3" />
+                <h4>Steve Mark</h4>
+                <p class="">Lorem ipsum dolor sit amet.</p>
+                <a href="#" class="btn btn-primary"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a href="#" class="btn btn-primary"
+                  ><i class="bi bi-twitter"></i
+                ></a>
+                <a href="#" class="btn btn-primary"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- faq area -->
+    <section id="faq" class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <img src="img/faq.svg" alt="" class="img-fluid" />
+          </div>
+          <div class="col-md-7 align-self-center pt-3">
+            <h3>FAQs</h3>
+            <div class="accordion mt-3">
+              <div class="accordion-item mb-2">
+                <div class="accordion-header">
+                  <button
+                    type="button"
+                    class="accordion-button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq-01"
+                  >
+                    #1 Lorem, ipsum dolor.
+                  </button>
+                </div>
+                <div class="accordion-collapse collapse show" id="faq-01">
+                  <div class="accordion-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Incidunt laboriosam porro libero magnam facere nobis
+                      illum, fugiat quidem delectus explicabo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item mb-2">
+                <div class="accordion-header">
+                  <button
+                    type="button"
+                    class="accordion-button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq-02"
+                  >
+                    #2 Lorem, ipsum dolor.
+                  </button>
+                </div>
+                <div class="accordion-collapse collapse" id="faq-02">
+                  <div class="accordion-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Incidunt laboriosam porro libero magnam facere nobis
+                      illum, fugiat quidem delectus explicabo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item mb-2">
+                <div class="accordion-header">
+                  <button
+                    type="button"
+                    class="accordion-button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq-03"
+                  >
+                    #3 Lorem, ipsum dolor.
+                  </button>
+                </div>
+                <div class="accordion-collapse collapse" id="faq-03">
+                  <div class="accordion-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Incidunt laboriosam porro libero magnam facere nobis
+                      illum, fugiat quidem delectus explicabo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact area -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <h2>Contact Us</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam, a.
+            </p>
+            <form class="form">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id=""
+                  placeholder="Enter Name"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id=""
+                  placeholder="Enter Email"
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  type="text"
+                  class="form-control"
+                  id=""
+                  placeholder="Enter Message"
+                ></textarea>
+              </div>
+              <div class="mb-3">
+                <button class="btn btn-primary">Send</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-5">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14664.148804565486!2d72.6273969!3d23.2417333!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c2bf0022b4609%3A0x4ecd09a1a9d956eb!2sArgusoft!5e0!3m2!1sen!2sin!4v1694168015996!5m2!1sen!2sin"
+              class="w-100"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer area -->
+    <footer id="footer" class="pt-4 pb-3 bg-secondary text-white text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h5>Copyright &copy; All right reserved - Yash Shah</h5>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
